@@ -1,5 +1,5 @@
 import sys 
-
+import random 
 
 print(sys.version);
 print("Hello World");
@@ -35,3 +35,128 @@ print("Hello World!", end=" gerdedrg\n")
 print(111111)
 print(10 + 15)
 print("I am", 35, "years old.")
+
+
+"""
+This is multi line comment 
+"""
+
+#Python Variables
+K = "Kwabena"
+y = "John"
+
+print(K, y);
+
+
+# Casting
+# If you want to specify the data type of a variable, this can be done with casting.
+nim1 = int(50)
+stin = str("Hello World")
+
+print(type(nim1))
+
+
+
+# Case-Sensitive
+a = 4
+A = "Salty"
+
+# Python - Variable Names
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
+
+# Multi Words Variable Names
+# Camel Case
+# Each word, except the first, starts with a capital letter:
+myVariableName = "John"
+
+
+
+# Pascal Case
+# Each word starts with a capital letter:
+MyVariableName = "John"
+
+
+# Snake Case
+# Each word is separated by an underscore character:
+my_variable_name = "John" 
+
+
+# Python Variables - Assign Multiple Values
+
+name, age , year = "John", 25, 2025;
+print(name)
+
+
+# Unpack a Collection
+fruit = ["apple", "banana", "cherry"]
+x, y, z = fruit
+print(x)
+
+
+
+# Python - Global Variables
+# Global variables can be used by everyone, both inside of functions and outside.
+
+Page = "Awesome"
+
+def myFuncti():
+  print("Python is " + Page)
+
+myFuncti();
+
+
+
+def myAge():
+  age = 30
+  print(age)
+
+myAge()
+
+def myLife():
+  global lesson
+  lesson = "Python is great!"
+
+myLife()
+
+print(lesson)
+
+
+# Python Data Types
+# In programming, data type is an important concept.
+
+# Text Type: 	str
+# Numeric Types: 	int, float, complex
+# Sequence Types: 	list, tuple, range
+# Mapping Type: 	dict
+# Set Types: 	set, frozenset
+# Boolean Type: 	bool
+# Binary Types: 	bytes, bytearray, memoryview
+# None Type: 	NoneType
+
+
+
+# Python Numbers
+# There are three numeric types in Python:
+
+b =  1   #int 
+c = 2.8  #float
+d = 1j   #complex
+
+
+
+
+# Type Conversion
+# You can convert from one type to another with the int(), float(), and complex() methods:
+T =  1 
+#convert from int to float:
+U = float(T)
+print(U)
+print(random.randrange(1, 10));
+
+
