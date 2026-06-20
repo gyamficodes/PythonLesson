@@ -159,4 +159,34 @@ U = float(T)
 print(U)
 print(random.randrange(1, 10));
 
+# Python Strings
+print("Hello")
+
+
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a) 
+
+print(a[0])
+
+# Looping Through a String
+for x in "Gyamfi":
+  print(x.upper())
+
+  # String Length
+print(len(a))
+
+# Check String
+print("Lorem" in a)
+
+
+if("Lorem" in a):
+  print("Yes, lorem is present")
+
+
+
+
+
 
