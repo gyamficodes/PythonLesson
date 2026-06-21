@@ -187,6 +187,32 @@ if("Lorem" in a):
 
 
 
+# Slicing Strings
+Item = "Hello World"
+Itemb  =  "Django is great"
+print(Item[2:6])
+print(Item[2:])
+
+# Negative Indexing
+# Use negative indexes to start the slice from the end of the string:
+print(Item[-5:-2])
 
 
+# Python - Modify Strings
+print(Item.upper()) #text to upper case
+print(Item.lower()) #text to lower case
+print(Item.strip()) # removes any whitespace from the beginning or the end
+print(Item.replace("H", "J")) # replaces a string with another string
+print(Item.split(",")) # returns ['Hello', ' World']
+print(Item + Itemb) # concatenates two strings
 
+# Python - String Concatenation
+
+# String Format
+myAge =20
+txt = f"My name is John, and I am {myAge} years old"
+print(txt)
+
+thePrice = 49
+txt = f"The price is {thePrice} dollars"
+print(txt)
