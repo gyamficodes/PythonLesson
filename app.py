@@ -205,7 +205,16 @@ print(Item.strip()) # removes any whitespace from the beginning or the end
 print(Item.replace("H", "J")) # replaces a string with another string
 print(Item.split(",")) # returns ['Hello', ' World']
 print(Item + Itemb) # concatenates two strings
-
+print('Centered:',Item.center(1)) # returns a centered string
+print(Item.casefold())# returns a casefolded string
+print(Item.count("o")) # returns the number of times a specified value occurs in a string
+print(Item.encode()) # returns an encoded version of the string
+print(Item.format_map("{}")) # returns a formatted version of the string
+print(Item.index("o")) 
+print(Item.isalnum()) #Returns True if all characters in the string are alphanumeric
+print(Item.isalpha())  #Returns True if all characters in the string are alphanumeric
+print(Item.partition("3"))
+print(Item.replace("h", "w"))
 # Python - String Concatenation
 
 # String Format
@@ -216,3 +225,7 @@ print(txt)
 thePrice = 49
 txt = f"The price is {thePrice} dollars"
 print(txt)
+
+# Escape Character
+myTxt = "We are the so-called \"Vikings\" from the north."
+print(myTxt)
