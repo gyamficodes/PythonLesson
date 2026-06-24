@@ -229,3 +229,26 @@ print(txt)
 # Escape Character
 myTxt = "We are the so-called \"Vikings\" from the north."
 print(myTxt)
+
+
+# Python Booleans
+# Booleans represent one of two values: True or False.
+print(10 > 9)
+
+voteAge = 18
+
+if  voteAge >= 18:
+  print("You can vote")
+else:
+  print("you cant vote")
+  
+
+
+def myReturn():
+  return True
+print(myReturn())
+
+c = 200
+print(isinstance(c, int))
+
+
