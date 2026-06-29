@@ -252,3 +252,22 @@ c = 200
 print(isinstance(c, int))
 
 
+# Python Lists
+myList = ["apple", "banana", "cherry"]
+print(myList)
+
+
+# The Ternary Operator
+num = 5
+
+WKK = "Weekday" if num > 5 else "Weekend"
+print(WKK)
+
+
+# Python Identity Operators
+
+print(10 is not 20)
+print((6 + 3) - (6 + 3)) 
+
+
+
