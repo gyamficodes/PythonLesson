@@ -252,11 +252,6 @@ c = 200
 print(isinstance(c, int))
 
 
-# Python Lists
-myList = ["apple", "banana", "cherry"]
-print(myList)
-
-
 # The Ternary Operator
 num = 5
 
@@ -271,3 +266,11 @@ print((6 + 3) - (6 + 3))
 
 
 
+# Python Lists
+myList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(type(myList))
+
+# Python - Access List Items
+print(myList[0])
+print(myList[-1])
+print(myList[1:5])
