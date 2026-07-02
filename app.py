@@ -274,3 +274,31 @@ print(type(myList))
 print(myList[0])
 print(myList[-1])
 print(myList[1:5])
+
+
+# Python - Change List Items
+thislist = ["apple", "banana", "cherry"]
+rice = thislist[1] = "Rice"
+print(rice)
+
+# add items
+laptop = ["Hp", "Dell", "Macbook"]
+laptop.append("Asus")
+print(laptop)
+
+
+
+# Insert Items
+# To insert a list item at a specified index, use the insert() method.
+# The insert() method inserts an item at the specified index:
+
+laptop.insert(1, "Lenovo")
+print(laptop)
+
+
+tropical = ["mango", "pineapple", "papaya"]
+
+thislist.extend(tropical)
+print(thislist)
+
+
