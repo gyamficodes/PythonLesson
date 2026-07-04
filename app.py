@@ -301,4 +301,74 @@ tropical = ["mango", "pineapple", "papaya"]
 thislist.extend(tropical)
 print(thislist)
 
+# Python - Loop Lists
 
+for x in thislist:
+  print(x)
+
+
+# Loop Through the Index Numbers
+for i in range(len(thislist)):
+  print(thislist[i])
+
+
+p = 0
+while p < len(thislist):
+  print(thislist[p])
+  p+= 1
+
+
+  # Looping Using List Comprehension
+[print(x) for x in thislist]
+
+# List Comprehension
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+for x in fruits:
+  if "a" in x:
+    print("newlist",x)
+
+
+    # Python - Sort Lists
+    # Sort List Alphanumerically
+thislist1 = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist1.sort()
+print(thislist1)
+
+thislist2 = [100, 50, 65, 82, 23]
+thislist2.sort()
+print(thislist2)
+
+# Customize Sort Function
+
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+
+
+
+# Python - Copy Lists
+mylist = thislist1.copy()
+print(mylist);
+
+# Use the slice Operator
+# You can also make a copy of a list by using the : (slice) operator.
+mylist = thislist1[:]
+print(mylist)
+
+
+# Method 	Description
+# append()	Adds an element at the end of the list
+# clear()	Removes all the elements from the list
+# copy()	Returns a copy of the list
+# count()	Returns the number of elements with the specified value
+# extend()	Add the elements of a list (or any iterable), to the end of the current list
+# index()	Returns the index of the first element with the specified value
+# insert()	Adds an element at the specified position
+# pop()	Removes the element at the specified position
+# remove()	Removes the item with the specified value
+# reverse()	Reverses the order of the list
+# sort()	Sorts the list
