@@ -351,8 +351,7 @@ print(thislist)
 
 
 # Python - Copy Lists
-mylist = thislist1.copy()
-print(mylist);
+mylist = thislist;
 
 # Use the slice Operator
 # You can also make a copy of a list by using the : (slice) operator.
@@ -372,3 +371,10 @@ print(mylist)
 # remove()	Removes the item with the specified value
 # reverse()	Reverses the order of the list
 # sort()	Sorts the list
+
+
+
+# Python Tuples
+myTuple = ("apple", "banana", "cherry")
+
+
