@@ -378,3 +378,51 @@ print(mylist)
 myTuple = ("apple", "banana", "cherry")
 
 
+for i in myTuple:
+  print(i)
+
+  for i in range(len(myTuple)):
+    print(myTuple[i])
+
+
+    c = 0
+while c < len(myTuple):
+  print(myTuple[c])
+  c+= 1
+
+
+indi = myTuple.index("banana")
+print(indi)
+
+# Create Tuple With One Item
+# To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+
+thisTuple = ("apple",)
+print(thisTuple)
+
+
+# The tuple() Constructor
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple)
+
+
+# Change Tuple Values
+# Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+# But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple
+
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+
+
+# Python - Unpack Tuples
+myfruits = ("apple", "banana", "cherry")
+(green, yellow, red) = myfruits
+print(green)
+
+
+
+
+
