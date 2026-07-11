@@ -424,5 +424,7 @@ print(green)
 
 
 
+# Python Sets
 
-
+theSet = {"apple", "banana", "cherry"}
+print(theSet)
