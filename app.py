@@ -425,6 +425,21 @@ print(green)
 
 
 # Python Sets
-
-theSet = {"apple", "banana", "cherry"}
+theSet = {"apple", "banana", "cherry","banana"}
+theSet.add("orange")
 print(theSet)
+
+
+for b in theSet:
+  print(b)
+
+# Create and print a dictionary:
+  # Dictionaries are written with curly brackets, and have keys and values:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+
