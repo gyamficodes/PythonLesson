@@ -443,3 +443,69 @@ thisdict = {
 }
 print(thisdict)
 
+# Python Collections (Arrays)
+# There are four collection data types in the Python programming language:
+
+#     List is a collection which is ordered and changeable. Allows duplicate members.
+#     Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+#     Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+#     Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+
+# Accessing  Items
+model = thisdict["model"];
+
+print(model)
+
+if "brand" in thisdict: 
+  print("Yes, 'brand' is one of the keys in the thisdict dictionary")
+
+
+# Change Values
+# You can change the value of a specific item by referring to its key name:
+
+thisdict["year"] = 2018
+
+# Adding Items
+thisdict["color"] = "red"
+# Removing Items
+thisdict.pop("model")
+
+
+print("dict",thisdict)
+
+
+# loo  dic 
+for x in thisdict:
+  print(thisdict[x]) 
+
+  # Python - Nested Dictionaries
+  # A dictionary can contain dictionaries, this is called nested dictionaries.
+  myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+} 
+  
+
+# loop through it 
+for i, ele in myfamily.items():
+  print(i)
+
+  for y in ele:
+    print(y + ':', ele[y])
+
+
+
+
+
+    # Python Conditions and If statements
