@@ -651,4 +651,29 @@ match myDay:
     print("Invalid day")
 
 
+# Python Loops
+# Python has two primitive loop commands:
+#     while loops
+#     for loops
 
+
+# The while Loop
+# With the while loop we can execute a set of statements as long as a condition is true.
+
+
+i = 1
+while i <= 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+   
+
+k = 1
+while k < 6:
+  k += 1
+  if k == 3:
+    continue
+  print("continue",k)
+else:
+    print("k is no longer less than 6")
