@@ -436,6 +436,13 @@ for b in theSet:
 # Create and print a dictionary:
   # Dictionaries are written with curly brackets, and have keys and values:
 
+myType = {
+  "name": "Jonny",
+  "quality": "vrrv",
+  "age": 25,
+}
+print(type(myType))
+
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
@@ -505,7 +512,143 @@ for i, ele in myfamily.items():
     print(y + ':', ele[y])
 
 
-
-
-
+ 
     # Python Conditions and If statements
+a = 30
+b = 200
+
+if(b > a):
+  print("b is greater than a");
+
+
+# Using Variables in Conditions
+is_Login_in = True
+if is_Login_in:
+  print("Welcome back!")
+elif is_Login_in == False:
+    print("Logout")
+else:
+  print("create account")
+
+
+day = 3
+
+if day == 1:
+  print("Monday")
+elif day == 2:
+  print("Tuesday")
+elif day == 3:
+  print("Wednesday")
+elif day == 4:
+  print("Thursday")
+elif day == 5:
+  print("Friday")
+elif day == 6:
+  print("Saturday")
+elif day == 7:
+  print("Sunday")
+else:
+  print("No day")
+
+
+
+  # Python Shorthand If
+
+if a > b: print("Come here")
+
+# Short Hand If ... Else
+num1 = 10
+num2 = 20
+
+print("num1 is greater than num2") if num1 > num2 else print("num2 is greater than num1")
+
+
+# This is called a conditional expression (sometimes known as a "ternary operator").
+
+
+# value_if_true if condition else value_if_false
+l = 10
+result = "yes" if l > 5 else "no"
+print(result)
+
+# Python Logical Operators
+book1 = 20
+book2 = 10
+
+if book1 > book2 and book2 < book1:
+  print("Both conditions are True")
+
+
+if book1 > book2 and book2 > book1:
+  print("At least one of the conditions is True")
+
+if not book2 > book1:
+    print("book2 is NOT greater than b")
+
+
+# More Examples
+username = "Tobias"
+password = "secret123"
+is_verified = True
+
+if username and password and is_verified:
+  print("Login successful")
+else:
+  print("Login failed")
+
+  # Python Nested If
+myAge = 25
+
+if myAge > 10:
+   print("Above ten,")
+   if myAge > 20:
+      print("Above twenty,")
+   else:
+      print("Not above twenty,")
+
+
+
+mudician = "blacksherif"
+
+if mudician == "blacksherif":
+  print("He is a Ghanaian musician")
+  if mudician == " Drake":
+    print("He is a Canadian musician")
+  else:
+    print("He is not a Canadian musician")
+else:
+  print("He is not a Ghanaian musician")
+
+
+# Python Pass Statement
+# The pass Statement
+# if statements cannot be empty, but if you for some reason have an if statement with no content, put in the pass statement to avoid getting an error.
+if a > b:
+  pass
+
+# Python Match
+# The match statement is used to perform different actions based on different conditions.
+
+myDay = 1
+
+
+match myDay: 
+  case 1 | 2 | 3:
+    print("Week Day")
+  case 2:
+    print("Tuesday")
+  case 3:
+    print("Wednesday")
+  case 4:
+    print("Thursday")
+  case 5:
+    print("Friday")
+  case 6:
+    print("Saturday")
+  case 7:
+    print("Sunday")
+  case _:
+    print("Invalid day")
+
+
+
