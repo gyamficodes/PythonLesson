@@ -677,3 +677,50 @@ while k < 6:
   print("continue",k)
 else:
     print("k is no longer less than 6")
+
+
+# Python For Loops
+# A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+   if x == "banana":
+    continue
+print(x)
+
+for x in "apple":
+  print(x)
+
+
+# The range() Function
+# To loop through a set of code a specified number of times, we can use the range() function,
+for x in range(6):
+  print(x)
+
+# Nested Loops
+# A nested loop is a loop inside a loop.
+
+for i in range(4):
+  print(i)
+  for y in range(3):
+    print("y",y)
+
+
+# Python Functions
+# A function is a block of code which only runs when it is called.
+# A function can return data as a result.
+# A function helps avoiding code repetition.
+
+def my_function():
+  print("Hello from a function")
+
+my_function()
+
+
+def getGreeting():
+   return "Good Morning"
+
+message = getGreeting()
+print(message)
+
+# Python Function Arguments
