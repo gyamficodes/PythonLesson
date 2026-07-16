@@ -724,3 +724,94 @@ message = getGreeting()
 print(message)
 
 # Python Function Arguments
+def getFname(fname):
+  print(f"my name is {fname}")
+
+getFname("Jonny")
+
+
+
+# *args and **kwargs
+# Arbitrary Arguments - *args
+# If you do not know how many arguments will be passed into your function, add a * before the parameter name.
+# This way, the function will receive a tuple of arguments and can access the items accordingly:
+
+def my_function(*kids):
+  print("The youngest child is " + kids[0])
+  print("The youngest child is " + kids[1])
+  
+
+my_function("Emil", "Tobias", "Linus")
+
+
+# Using *args with Regular Arguments
+
+def detNamea(hreeting, *siblings):
+  for i in siblings:
+    print(hreeting, i)
+
+detNamea("Hello","Sarah", "Kame","Hannah","Atta")
+
+
+def sumNum(*numbers):
+  total = 0
+  for num in numbers:
+   total+= num 
+   return total
+  
+sumresult = sumNum(29, 10, 5)
+print(sumresult)
+
+
+# What is **kwargs?
+def my_function(**myvar):
+  print("Type:", type(myvar))
+  print("Name:", myvar["name"])
+  print("Age:", myvar["age"])
+  print("All data:", myvar)
+
+my_function(name = "Tobias", age = 30, city = "Bergen") 
+
+# Python Scope
+# A variable is only available from inside the region it is created. This is called scope.
+
+def myfunc():
+  x = 300
+  print(x)
+
+myfunc() 
+
+
+# Python Decorators
+# Decorators let you add extra behavior to a function, without changing the function's code.
+# A decorator is a function that takes another function as input and returns a new function.
+
+
+# Lambda Functions
+# A lambda function is a small anonymous function.
+# A lambda function can take any number of arguments, but can only have one expression.
+
+
+x = lambda a : a + 10
+print(x(10))
+
+y = lambda x, y: x + y
+print(y(50,50))
+
+
+def add_nums(n):
+  return lambda a : a * n
+
+mydoubler = add_nums(50)
+print(mydoubler(5))
+
+
+# Lambda with Built-in Functions
+# Using Lambda with map()
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+odd_numbers = list(filter(lambda x: x % 2 != 0, numbers))
+print(odd_numbers)
+
+
+
