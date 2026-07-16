@@ -814,4 +814,62 @@ odd_numbers = list(filter(lambda x: x % 2 != 0, numbers))
 print(odd_numbers)
 
 
+# Recursion
+# Recursion is when a function calls itself.
+
+
+def countdown(n):
+  if n <= 0:
+    print("Done!")
+  else:
+    print(n)
+    countdown(n - 1)
+
+countdown(5) 
+
+
+
+# Base Case and Recursive Case
+
+# Every recursive function must have two parts:
+
+#     A base case - A condition that stops the recursion
+#     A recursive case - The function calling itself with a modified argument
+
+
+def sayName(name):
+    if name == "John":
+        print("Hello, John!")
+    else:
+       return sayName("John")
+
+
+sayName("Alice")  # Output: Hello, John!\
+
+
+# Calculate the sum of all elements in a list:
+def sumNumbers(numbers):
+  if len(numbers) == 0:
+    return 0
+  else:
+    return numbers[0] + sumNumbers(numbers[1:])
+  
+my_list = [1, 2, 3, 4, 5]
+print(sumNumbers(my_list))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
