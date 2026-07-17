@@ -1,5 +1,9 @@
 import sys 
 import random 
+import mymodule as mf
+import platform
+
+
 
 print(sys.version);
 print("Hello World");
@@ -858,18 +862,42 @@ my_list = [1, 2, 3, 4, 5]
 print(sumNumbers(my_list))
 
 
+# Python Generators
+
+def count_up_to(n):
+  count = 1
+  while count <= n:
+    yield count
+    count += 1
+
+for num in count_up_to(5):
+  print(num) 
+
+# Python range
+
+for i in range(5,10):
+  print(i)
 
 
+# Python Iterators
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
 
 
+# Python Modules
+mf.greetings("John")
+person =  mf.Person
+print(person)
 
+Plat = platform.system()
+print("Operating System:", Plat)
 
-
-
-
-
-
-
+# x = dir(platform)
+# print(x)
 
 
 
