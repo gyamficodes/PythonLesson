@@ -2,7 +2,7 @@ import sys
 import random 
 import mymodule as mf
 import platform
-
+import datetime
 
 
 print(sys.version);
@@ -898,6 +898,30 @@ print("Operating System:", Plat)
 
 # x = dir(platform)
 # print(x)
+
+
+# Python Datetime
+
+neDate = datetime.datetime.now()
+print("Current date and time:", neDate)
+print(neDate.year)
+
+
+
+
+# The strftime() Method
+# The datetime object has a method for formatting date objects into readable strings.
+
+x = datetime.datetime(2018, 6, 1)
+
+print(x.strftime("%B")) 
+
+
+
+
+
+
+
 
 
 
