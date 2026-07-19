@@ -3,7 +3,7 @@ import random
 import mymodule as mf
 import platform
 import datetime
-
+import math 
 
 print(sys.version);
 print("Hello World");
@@ -918,10 +918,19 @@ print(x.strftime("%B"))
 
 
 
+# Python Math
+x = [1,2,3,50,60]
 
+m = min(x)
+n = max(x)
+p = abs(-7.25)
+print(m,n,p)
 
+age = 25.5
+A = math.sqrt(age)
+fl = math.floor(age)
+print(A,fl)
 
-
-
+# Python JSON
 
 
