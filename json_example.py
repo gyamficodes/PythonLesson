@@ -3,6 +3,7 @@
 # If you have a JSON string, you can parse it by using the json.loads() method.
 import json
 
+
 # some JSON:
 x =  '{ "name":"John", "age":30, "city":"New York"}'
 

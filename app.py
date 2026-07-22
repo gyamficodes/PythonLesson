@@ -4,6 +4,10 @@ import mymodule as mf
 import platform
 import datetime
 import math 
+import re 
+
+import camelcase
+
 
 print(sys.version);
 print("Hello World");
@@ -919,7 +923,7 @@ print(x.strftime("%B"))
 
 
 # Python Math
-x = [1,2,3,50,60]
+x = [1,2,3,50,60];
 
 m = min(x)
 n = max(x)
@@ -932,6 +936,30 @@ fl = math.floor(age)
 print(A,fl)
 
 
+# RegEx Module
+# Python has a built-in package called re, which can be used to work with Regular Expressions.
+# Import the re module:
+
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
 
 
 
+c = camelcase.CamelCase()
+txt = "hello world"
+print(c.hump(txt)) 
+
+
+
+# Python Try Except
+
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+
+
+
+# Python String Formatting
