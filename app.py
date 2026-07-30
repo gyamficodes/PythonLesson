@@ -963,6 +963,36 @@ finally:
 
 
 # Python String Formatting
+# F-String was introduced in Python 3.6, and is now the preferred way of formatting strings.
+# Before Python 3.6 we had to use the format() method.
+
+price = 49
+txt = f"The price is {price} dollars"
+print(txt)
 
 
+# Execute Functions in F-Strings
+fruits = "Apples"
 
+tt = f"Hello, I love {fruits.upper()}"
+print(tt)
+
+
+price = 59000
+txt = f"The price is {price:,} dollars"
+print(txt)
+
+
+# Python None
+# None is a special constant in Python that represents the absence of a value.
+# Its data type is NoneType, and None is the only instance of a NoneType object.
+
+x = None
+print(x)
+
+
+result = None
+if result is not None:
+  print("Result is ready")
+else:
+  print("No result yet")
