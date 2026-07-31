@@ -1,6 +1,6 @@
 import sys 
 import random 
-import mymodule as mf
+import Lesson.mymodule as mf
 import platform
 import datetime
 import math 
