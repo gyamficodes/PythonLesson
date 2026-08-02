@@ -147,6 +147,51 @@ p1.greet()
 
 # Methods with Parameters
 # Methods can accept parameters just like regular functions:
+class Calculator:
+    def add(self, a, b):
+        return a + b
+    def multuply(self, a, b):
+        return a * b
+
+calc = Calculator()
+print(calc.add(5, 3))  # Output: 8
+print(calc.multuply(5, 3))  # Output: 15
+
+
+
+# The __str__() Method
+# The __str__() method is a special method that controls what is returned when the object is printed:
+
+class Playlist:
+  def __init__(self, name):
+    self.name = name
+    self.songs = []
+
+  def add_song(self, song):
+    self.songs.append(song)
+    print(f"Added: {song}")
+
+  def remove_song(self, song):
+    if song in self.songs:
+      self.songs.remove(song)
+      print(f"Removed: {song}")
+
+  def show_songs(self):
+    print(f"Playlist '{self.name}':")
+    for song in self.songs:
+      print(f"- {song}")
+
+my_playlist = Playlist("Favorites")
+my_playlist.add_song("Bohemian Rhapsody")
+my_playlist.add_song("Stairway to Heaven")
+my_playlist.remove_song("Stairway to Heaven")
+my_playlist.show_songs() 
+
+
+
+
+
+
 
 
 
