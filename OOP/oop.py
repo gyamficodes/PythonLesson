@@ -118,15 +118,35 @@ c1.displayCar()
 # Properties defined outside methods belong to the class itself (class properties) and are shared by all objects:
 
 class  Items: 
-    
+    expire = "2026"  # Class property - shared by all objects
+    def __init__(self, name, price,info):
+        self.name = name   # Instance property - object property
+        self.price = price
+        self.info = info
+    def displayItems(self):
+        print(f"Name: {self.name}, Price: {self.price}, Info: {self.info}")
 
 
+I1 = Items("Laptop", 1000, "High performance laptop")
+print(I1.expire)  # Accessing class property
+I1.displayItems()
 
 
+# Class Methods
+# Methods are functions that belong to a class. They define the behavior of objects created from the class.
+class Person:
+  def __init__(self, name):
+    self.name = name
+
+  def greet(self):
+    print("Hello, my name is " + self.name)
+
+p1 = Person("Emil")
+p1.greet() 
 
 
-
-
+# Methods with Parameters
+# Methods can accept parameters just like regular functions:
 
 
 
